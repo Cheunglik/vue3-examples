@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mb-20">
         <h1>{{ meta.title }}</h1>
     </div>
     <div>

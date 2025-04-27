@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="mb-20">
         <h1>{{ meta.title }}</h1>
-        <button @click="increment">
-            Count is: {{ state.count }}, double is: {{ state.double }}
-        </button>
     </div>
+    <button @click="increment">
+        Count is: {{ state.count }}, double is: {{ state.double }}
+    </button>
 </template>
 
 <script setup lang="ts">

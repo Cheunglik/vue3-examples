@@ -1,6 +1,6 @@
 <template>
     <div class="col-md-12">
-        <div>
+        <div class="mb-20">
             <h1>{{ meta.title }}</h1>
         </div>
         <div class="card mb-4 box-shadow">
