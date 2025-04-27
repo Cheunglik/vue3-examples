@@ -28,6 +28,7 @@ Examples
 * Custom directives
 * Ref attribute
 * Slot
+* Plugin translate
 
 ## Project setup
 ```

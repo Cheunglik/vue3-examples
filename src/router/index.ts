@@ -274,6 +274,16 @@ const routes: Array<RouteRecordRaw> = [
             title: 'Slot'
         },
         component: (): Promise<any> => import('@/view/slot/Slot.vue')
+    },
+    {
+        path: '/plugin-translate',
+        name: 'plugin_translate',
+        meta: {
+            position: 21,
+            display: true,
+            title: 'Plugin translate'
+        },
+        component: (): Promise<any> => import('@/view/plugin/Translate.vue')
     }
 ]
 
@@ -287,7 +297,7 @@ router.beforeEach((to, from, next) => {
     const nearestWithMeta = to.matched.slice().reverse().find(r => r.meta && r.meta.metaTags)
 
     if (nearestWithTitle) {
-        document.title = nearestWithTitle.meta.title
+        (document as any).title = nearestWithTitle.meta.title
     }
 
     Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => {
@@ -298,7 +308,7 @@ router.beforeEach((to, from, next) => {
         return next()
     }
 
-    nearestWithMeta.meta.metaTags
+    (nearestWithMeta.meta.metaTags as any)
         .map((tagDef: any): Element => {
             const tag = document.createElement('meta')
 
