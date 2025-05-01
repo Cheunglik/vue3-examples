@@ -1,6 +1,6 @@
 <template>
-    <input type="text" class="form-control mr-sm-2 mb-2" v-model="newTodoTitle"/>
-    <textarea class="form-control mr-sm-2 mb-2" v-model="newTodoDescription"/>
+    <input type="text" class="form-control mr-sm-2 mb-2" v-model="newTodoTitle" placeholder="title"/>
+    <textarea class="form-control mr-sm-2 mb-2" v-model="newTodoDescription" placeholder="description"/>
     <div>
         <input type="button"
                class="btn btn-outline-success my-2 my-sm-0"
