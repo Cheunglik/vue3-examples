@@ -279,11 +279,21 @@ const routes: Array<RouteRecordRaw> = [
         path: '/plugin-translate',
         name: 'plugin_translate',
         meta: {
-            position: 21,
+            position: 22,
             display: true,
             title: 'Plugin translate'
         },
         component: (): Promise<any> => import('@/view/plugin/Translate.vue')
+    },
+    {
+        path: '/watchers',
+        name: 'watchers',
+        meta: {
+            position: 23,
+            display: true,
+            title: 'Watchers'
+        },
+        component: (): Promise<any> => import('@/view/Watchers.vue')
     }
 ]
 

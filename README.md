@@ -29,6 +29,7 @@ Examples
 * Ref attribute
 * Slot
 * Plugin translate
+* Watchers
 
 ## Project setup
 ```
